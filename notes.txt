@@ -1,1 +1,9 @@
 https://github.com/andras-nemes/webapifromscratchwithowin
+
+Install mvc package
+Install api package
+Install Owin packages
+Create StartUp and show code
+StructuremapWebApi / disable webactivator
+StructuremapMvc / remove commented out code
+Delete Global.asax if not using mvc controller

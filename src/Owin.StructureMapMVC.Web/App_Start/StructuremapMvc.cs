@@ -19,8 +19,8 @@ using Owin.StructureMapMVC.Web.App_Start;
 
 using WebActivatorEx;
 
-//[assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
-//[assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
+[assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
+[assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
 
 namespace Owin.StructureMapMVC.Web.App_Start {
 	using System.Web.Mvc;
@@ -45,9 +45,9 @@ namespace Owin.StructureMapMVC.Web.App_Start {
         }
 		
         public static void Start() {
-            IContainer container = IoC.Initialize();
-            StructureMapDependencyScope = new StructureMapDependencyScope(container);
-            DependencyResolver.SetResolver(StructureMapDependencyScope);
+            //IContainer container = IoC.Initialize();
+            //StructureMapDependencyScope = new StructureMapDependencyScope(container);
+            //DependencyResolver.SetResolver(StructureMapDependencyScope);
             DynamicModuleUtility.RegisterModule(typeof(StructureMapScopeModule));
         }
 
