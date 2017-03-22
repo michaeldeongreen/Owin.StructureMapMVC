@@ -1,0 +1,11 @@
+*.user
+/packages
+/.vs
+
+/src/Owin.StructureMapMVC.Services/bin
+/src/Owin.StructureMapMVC.Services/obj
+
+/src/Owin.StructureMapMVC.Web/bin
+/src/Owin.StructureMapMVC.Web/obj
+
+
